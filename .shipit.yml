@@ -1,0 +1,7 @@
+name: my-php-app
+type: php
+build:
+  commands:
+    - composer install --no-dev --optimize-autoloader
+deploy:
+  public: public

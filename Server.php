@@ -1,15 +1,15 @@
 <?php
 // Load autoloader FIRST so classes are available
-require_once "../vendor/autoload.php";
+require_once "./vendor/autoload.php";
 
 use Dotenv\Dotenv;
 use App\Controller\UploadController;
 use App\Models\CloudinaryModel;
 use App\Config\CloudinaryConfig;
 
-// Load environment variables
-$dotenv = Dotenv::createImmutable(dirname(__DIR__));
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
+
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');

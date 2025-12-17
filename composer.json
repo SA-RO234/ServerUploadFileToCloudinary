@@ -1,5 +1,5 @@
 {
-    "name": "r-sunrise/upload-file",
+    "name": "server",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
